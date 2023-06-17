@@ -1,14 +1,15 @@
 import express from "express";
+import * as bodyParser from 'body-parser';
 import { connectToDatabase } from "./server";
-import { taskRouter } from "./routes/routes";
 import { config } from "./config/config"
 
+const routes = require('./routes/routes')
 const app = express();
 
 connectToDatabase()
     .then(() => {
-        app.use("/tasks", taskRouter);
-
+        app.use(bodyParser.json())
+        app.use(routes);
         app.listen(8080, () => {
             console.log(`Server started at http://localhost:${config.server.port}`);
         });
