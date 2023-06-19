@@ -1,0 +1,38 @@
+.container-list-todo {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.list-todo {
+  background-color: #443737;
+  color:#ffffff;
+  padding: 15px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+.list-todo-buttons{
+  display: flex;
+}
+
+.icon-button {
+  width: 37px;
+  height: calc(100% + 12px);
+  color: #ffffff;
+  background-color: #443737;
+  border: 1px solid #443737;
+  border-radius: 5px;
+  font-size: 20px;
+  outline: none;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.icon-button:hover {
+    cursor: pointer;
+    background-color: #3d3131;
+    border-color: #3d3131;
+}

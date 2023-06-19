@@ -1,0 +1,33 @@
+input {
+  background-color: #443737;
+  border: 1px solid #443737;
+  border-radius: 5px;
+  width: 330px;
+  height: 100%;
+  padding: 5px;
+}
+
+.container-addTodo{
+  margin-bottom: 10px;
+  height: 29px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.add-button {
+  width: 37px;
+  height: calc(100% + 12px);
+  color: #ffffff;
+  background-color: #443737;
+  border: 1px solid #443737;
+  border-radius: 5px;
+  font-size: 34px;
+  outline: none;
+}
+
+.add-button:hover {
+    cursor: pointer;
+    background-color: #3d3131;
+    border-color: #3d3131;
+}
