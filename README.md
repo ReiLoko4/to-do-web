@@ -22,7 +22,7 @@
  ```
 6. Abra outro terminal conforme o passo 2
 7. Se dirija a pasta 'frontend' usando o comando 'cd' novamente<br>
-<br><img src='./assets/cd_frontend.png'>
+<br><img src='./assets/cd_frontend.png' height='230px'>
 8. Digite o seguinte comando e pressione enter:
 ```
 npm install
