@@ -1,5 +1,5 @@
 # to-do-web 🇧🇷
-<br><br>
+<br>
 
 # Sumário
 * [Requisitos](#Requisitos)
@@ -9,11 +9,11 @@
 
 # Requisitos
 
-- [Node](https://nodejs.org/en/download)<br><br>
+- [NodeJS](https://nodejs.org/en/download)<br><br>
 
 # Instruções de uso
 
-1. Certifique se de ter o NodeJS instalado em seu pc antes de continuar
+1. Certifique se de ter o NodeJS instalado em seu computador antes de continuar
 2. Abra o terminal de sua prefêrencia na pasta raiz do projeto, recomendo o [Git Bash](https://git-scm.com/downloads)<br>
 <br><img src='./assets/open_bash.png' height='280px'><br>
 <br><img src='./assets/open_cmd.png' height='260px'> <br><br>
