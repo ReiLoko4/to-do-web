@@ -6,9 +6,12 @@
 
 ## Instruções de uso
 
-1. Instale o Node em seu pc conforme seu software operacional
-2. Abra o terminal de sua prefêrencia, recomendo o [Git Bash](https://git-scm.com/downloads)
-3. Se dirija a pasta 'backend' atráves do comando 'cd' [(guia de uso)](https://learn.microsoft.com/pt-br/windows-server/administration/windows-commands/cd)
+1. Certifique se de ter o NodeJS instalado em seu pc antes de continuar
+2. Abra o terminal de sua prefêrencia na pasta raiz do projeto, recomendo o [Git Bash](https://git-scm.com/downloads)<br>
+<br><img src='./assets/open_bash.png' height='280px'><br>
+<br><img src='./assets/open_cmd.png' height='260px'> <br><br>
+3. Se dirija a pasta 'backend' atráves do comando 'cd' [(guia de uso aqui)](https://learn.microsoft.com/pt-br/windows-server/administration/windows-commands/cd)<br>
+<br><img src='./assets/cd_backend.png' height='200px'>
 4. Digite o seguinte comando no terminal e pressione enter:
  ```
  npm install
@@ -17,8 +20,9 @@
  ```
  npm run start
  ```
-6. Abra outro terminal
-7. Se dirija a pasta 'frontend' usando o comando 'cd' novamente
+6. Abra outro terminal conforme o passo 2
+7. Se dirija a pasta 'frontend' usando o comando 'cd' novamente<br>
+<br><img src='./assets/cd_frontend.png'>
 8. Digite o seguinte comando e pressione enter:
 ```
 npm install
