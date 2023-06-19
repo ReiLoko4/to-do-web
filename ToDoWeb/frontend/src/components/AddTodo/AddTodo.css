@@ -2,9 +2,10 @@ input {
   background-color: #443737;
   border: 1px solid #443737;
   border-radius: 5px;
-  width: 330px;
+  width: 320px;
   height: 100%;
-  padding: 5px;
+  padding: 5px 5px 5px 15px;
+  color: #ffffff;
 }
 
 .container-addTodo{
@@ -16,7 +17,7 @@ input {
 }
 
 .add-button {
-  width: 37px;
+  width: 39px;
   height: calc(100% + 12px);
   color: #ffffff;
   background-color: #443737;
@@ -24,6 +25,7 @@ input {
   border-radius: 5px;
   font-size: 34px;
   outline: none;
+  text-align: center;
 }
 
 .add-button:hover {

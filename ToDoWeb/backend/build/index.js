@@ -30,8 +30,10 @@ const express_1 = __importDefault(require("express"));
 const bodyParser = __importStar(require("body-parser"));
 const server_1 = require("./server");
 const config_1 = require("./config/config");
+const cors = require('cors');
 const routes = require('./routes/routes');
 const app = (0, express_1.default)();
+app.use(cors());
 (0, server_1.connectToDatabase)()
     .then(() => {
     app.use(bodyParser.json());
