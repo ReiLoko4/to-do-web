@@ -2,7 +2,7 @@
 <br>
 
 # Resumo
-<h3>Um site usando o framework React e uma API em Typescript que tem como foco armazenar, mostrar, editar e excluir listas de afazeres usando o banco de dados não-relactional (NotSQL) MongoDB e NodeJS como biblioteca e compilador.</h3><br>
+<h3>Um site usando o framework React e uma API em Typescript que tem como foco armazenar, mostrar, editar e excluir listas de afazeres usando o banco de dados não-relacional (NotSQL) MongoDB e NodeJS como biblioteca e compilador.</h3><br>
 
 # Sumário
 * [Resumo](#resumo)
@@ -28,11 +28,11 @@
 1. Certifique se de ter o NodeJS instalado em seu computador antes de continuar
 
 2. Abra o terminal de sua prefêrencia na pasta raiz do projeto, recomendo o [Git Bash](https://git-scm.com/downloads)<br>
-<br><img src='./assets/open_bash.png' height='280px'><br>
-<br><img src='./assets/open_cmd.png' height='260px'> <br><br>
+<br><img src='./assets/open_bash.png' height='280'><br>
+<br><img src='./assets/open_cmd.png' height='260'> <br><br>
 
 3. Se dirija a pasta 'backend' atráves do comando 'cd' [(guia de uso aqui)](https://learn.microsoft.com/pt-br/windows-server/administration/windows-commands/cd)<br>
-<br><img src='./assets/cd_backend.png' height='200px'>
+<br><img src='./assets/cd_backend.png' height='200'>
 
 4. Digite o seguinte comando no terminal e pressione enter:
     ```
@@ -58,10 +58,12 @@
     ```
 
 10. Copie o link mostrado no terminal
+<br><br><img src='./assets/copying.png' height='310'>
 
-11. Abra um navegador de sua prefêrencia e digite cole o link
+11. Abra um navegador de sua prefêrencia e cole o link
+<br><br><img src='./assets/link_on_browser.png' height='150'>
 
-* ⚠️ OBS: os terminais devem estar rodando o comando ao mesmo tempo, do contrário resultará em erro<br><br>
+* ⚠️ OBS: os terminais devem estar rodando o comando ao mesmo tempo, do contrário resultará em erro.<br><br>
 
 # Teste de Token CSRF
 
