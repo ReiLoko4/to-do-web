@@ -33,11 +33,11 @@ class ToDoController {
                 const newTask = req.body;
                 const result = yield ((_a = server_1.collections.tasks) === null || _a === void 0 ? void 0 : _a.insertOne(newTask));
                 result
-                    ? res.status(201).send(`Successfully created a new task with id ${result.insertedId}`)
-                    : res.status(500).send('Failed to create a new task.');
+                    ? res.status(200).send(`Successfully created a new task with id ${result.insertedId}`)
+                    : res.status(304).send('Failed to create a new task.');
             }
             catch (error) {
-                res.status(500).send(error);
+                res.status(400).send(error);
             }
         });
     }
@@ -55,7 +55,6 @@ class ToDoController {
                     : res.status(304).send(`Task with id: ${id} not updated`);
             }
             catch (error) {
-                console.error(error);
                 res.status(400).send(error);
             }
         });
@@ -69,17 +68,16 @@ class ToDoController {
                 const query = { _id: new mongodb_1.ObjectId(id) };
                 const result = yield ((_b = server_1.collections.tasks) === null || _b === void 0 ? void 0 : _b.deleteOne(query));
                 if (result && result.deletedCount) {
-                    res.status(202).send(`Successfully removed task with id ${id}`);
+                    res.status(200).send(`Successfully removed task with id ${id}`);
                 }
                 else if (!result) {
-                    res.status(400).send(`Failed to remove task with id ${id}`);
+                    res.status(304).send(`Failed to remove task with id ${id}`);
                 }
                 else if (!result.deletedCount) {
                     res.status(404).send(`Task with id ${id} does not exist`);
                 }
             }
             catch (error) {
-                console.error(error);
                 res.status(400).send(error);
             }
         });

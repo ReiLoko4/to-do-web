@@ -38,11 +38,11 @@ app.use(cors());
     .then(() => {
     app.use(bodyParser.json());
     app.use(routes);
-    app.listen(8080, () => {
+    app.listen(config_1.config.server.port, () => {
         console.log(`Server started at http://localhost:${config_1.config.server.port}`);
     });
 })
     .catch((error) => {
-    console.error("Database connection failed", error);
+    console.error('Database connection failed', error);
     process.exit();
 });
