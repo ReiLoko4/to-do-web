@@ -3,13 +3,25 @@ import "./AddTodo.css";
 import axios from "axios";
 export default function AddTodo() {
   const [nameTodo, setNameTodo] = useState("")
-  const addTodo = async () => axios.post("http://localhost:8080/tasks", {
-    name: nameTodo,
-  })
+
+  const addTodo = async (e: any) => {
+    if (nameTodo.length != 0) {
+      axios.post("http://localhost:8080/tasks", {
+        name: nameTodo,
+        isDone: false
+      })
+    }
+    setNameTodo('')
+    e.preventDefault()
+  }
+
   return (
-    <div className='container-addTodo'>
-      <input type='text' placeholder='Add new todo' onChange={(e) => setNameTodo(e.target.value)}/>
-      <button className='add-button' onClick={() => addTodo()}>+</button>
-    </div>
+    <form className='container-addTodo' onSubmit={(e) => addTodo(e)}>
+      <input type='text' placeholder='Adicionar nova tarefa' value={nameTodo} 
+        onChange={(e) => setNameTodo(e.target.value)} 
+        onSubmit={(e) => setNameTodo(e.currentTarget.value)
+      }/>
+      <button type={'submit'} className='add-button'>+</button>
+    </form>
   )
 }

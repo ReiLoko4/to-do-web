@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div className='body'>
       <div className='container'>
-        <h1>Todo List</h1>
+        <h1>Tr3ll0</h1>
         <AddTodo />
         <ListTodo />
       </div>

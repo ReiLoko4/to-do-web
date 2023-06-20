@@ -6,7 +6,7 @@ const taskControler = new ToDoController();
 
 
 route.get('/tasks', taskControler.getTasks);
-route.post('/tasks', taskControler.postTasks);
+route.post('/tasks', taskControler.postTask);
 route.put('/tasks/:id', taskControler.putTask);
 route.delete('/tasks/:id', taskControler.deleteTask);
 

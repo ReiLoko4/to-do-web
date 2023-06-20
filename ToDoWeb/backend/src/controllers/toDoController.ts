@@ -17,13 +17,13 @@ export default class ToDoController {
         }
     };
 
-    async postTasks(req: Request, res: Response) {
+    async postTask(req: Request, res: Response) {
         try{
             const newTask = req.body as Task;
             const result = await collections.tasks?.insertOne(newTask);
             result
-                ? res.status(201).send(`Successfully created a new game with id ${result.insertedId}`)
-                : res.status(500).send("Failed to create a new game.");
+                ? res.status(201).send(`Successfully created a new task with id ${result.insertedId}`)
+                : res.status(500).send("Failed to create a new task.");
         }
         catch (error){
             res.status(500).send(error)
@@ -38,8 +38,8 @@ export default class ToDoController {
             const result = await collections.tasks?.updateOne(query, { $set: updatedGame });
 
             result
-                ? res.status(200).send(`Successfully updated game with id ${id}`)
-                : res.status(304).send(`Game with id: ${id} not updated`);
+                ? res.status(200).send(`Successfully updated task with id ${id}`)
+                : res.status(304).send(`Task with id: ${id} not updated`);
         } catch (error) {
             console.error(error);
             res.status(400).send(error);
@@ -54,11 +54,11 @@ export default class ToDoController {
             const result = await collections.tasks?.deleteOne(query);
 
             if (result && result.deletedCount) {
-                res.status(202).send(`Successfully removed game with id ${id}`);
+                res.status(202).send(`Successfully removed task with id ${id}`);
             } else if (!result) {
-                res.status(400).send(`Failed to remove game with id ${id}`);
+                res.status(400).send(`Failed to remove task with id ${id}`);
             } else if (!result.deletedCount) {
-                res.status(404).send(`Game with id ${id} does not exist`);
+                res.status(404).send(`Task with id ${id} does not exist`);
             }
         } catch (error) {
             console.error(error);

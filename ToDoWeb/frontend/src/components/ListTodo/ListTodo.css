@@ -1,3 +1,22 @@
+
+input {
+  outline: none;
+}
+
+input[type="checkbox"] {
+  outline-width: 10px;
+  margin-top: 3.5px;
+  margin-right: 5px;
+  background-color: black;
+  font: inherit;
+  color: currentColor;
+  width: 1.15em;
+  height: 1.15em;
+  border: 0.15em solid currentColor;
+  border-radius: 0.15em;
+  transform: translateY(-0.075em);
+}
+
 .container-list-todo {
   width: 100%;
   margin-top: 20px;
@@ -11,7 +30,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 18px 0;
+  margin: 25px 0;
   
 }
 .list-todo-buttons{
@@ -36,4 +55,13 @@
     cursor: pointer;
     background-color: #3d3131;
     border-color: #3d3131;
+}
+
+.edit-todo {
+  border: 1px solid #ffffff;
+}
+
+.edit-todo-button{
+  font-size: 24px;
+  margin-left: 5px;
 }
