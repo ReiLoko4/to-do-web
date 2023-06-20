@@ -1,7 +1,8 @@
-import { connectToDatabase, collections } from "../server";
-import Task from "../models/task";
-import { Request, Response } from "express";
-import { ObjectId } from "mongodb";
+import { connectToDatabase, collections } from '../server';
+import Task from '../models/task';
+import { Request, Response } from 'express';
+import { ObjectId } from 'mongodb';
+
 
 connectToDatabase()
 
@@ -22,11 +23,11 @@ export default class ToDoController {
             const newTask = req.body as Task;
             const result = await collections.tasks?.insertOne(newTask);
             result
-                ? res.status(201).send(`Successfully created a new task with id ${result.insertedId}`)
-                : res.status(500).send("Failed to create a new task.");
+                ? res.status(200).send(`Successfully created a new task with id ${result.insertedId}`)
+                : res.status(304).send('Failed to create a new task.');
         }
         catch (error){
-            res.status(500).send(error)
+            res.status(400).send(error)
         }
     };
     async putTask(req:Request, res:Response) {
@@ -41,7 +42,6 @@ export default class ToDoController {
                 ? res.status(200).send(`Successfully updated task with id ${id}`)
                 : res.status(304).send(`Task with id: ${id} not updated`);
         } catch (error) {
-            console.error(error);
             res.status(400).send(error);
         }
     };
@@ -54,14 +54,13 @@ export default class ToDoController {
             const result = await collections.tasks?.deleteOne(query);
 
             if (result && result.deletedCount) {
-                res.status(202).send(`Successfully removed task with id ${id}`);
+                res.status(200).send(`Successfully removed task with id ${id}`);
             } else if (!result) {
-                res.status(400).send(`Failed to remove task with id ${id}`);
+                res.status(304).send(`Failed to remove task with id ${id}`);
             } else if (!result.deletedCount) {
                 res.status(404).send(`Task with id ${id} does not exist`);
             }
         } catch (error) {
-            console.error(error);
             res.status(400).send(error);
         }
     };

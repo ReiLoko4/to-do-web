@@ -8,7 +8,7 @@ const express_1 = __importDefault(require("express"));
 const route = express_1.default.Router();
 const taskControler = new toDoController_1.default();
 route.get('/tasks', taskControler.getTasks);
-route.post('/tasks', taskControler.postTasks);
+route.post('/tasks', taskControler.postTask);
 route.put('/tasks/:id', taskControler.putTask);
 route.delete('/tasks/:id', taskControler.deleteTask);
 module.exports = route;
