@@ -8,14 +8,14 @@
 * [Resumo](#resumo)
 * [Tecnologias](#tecnologias-utlizadas)
 * [Requisitos](#Requisitos)
-* [Instruções de uso](#instruções-de-uso)
-* [Teste de Token CSRF](#teste-de-token-csrf)<br><br>
+* [Instruções de uso](#instruções-de-uso)<br><br>
 
 # Tecnologias utlizadas
 - [Typescript](https://www.typescriptlang.org/)
 - [MongoDB](https://www.mongodb.com/)
 - [NodeJS](https://nodejs.org/en/download) 
 - [Express](https://expressjs.com/pt-br/)
+- [Nodemon](https://nodemon.io/)
 - [React](https://react.dev/)
 - [Vite](https://vitejs.dev/)<br><br>
 
@@ -64,6 +64,4 @@
 <br><br><img src='./assets/link_on_browser.png' height='150'>
 
 * ⚠️ OBS: os terminais devem estar rodando o comando ao mesmo tempo, do contrário resultará em erro.<br><br>
-
-# Teste de Token CSRF
 
