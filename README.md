@@ -29,10 +29,10 @@
 
 2. Abra o terminal de sua prefêrencia na pasta raiz do projeto, recomendo o [Git Bash](https://git-scm.com/downloads)<br>
 <br><img src='./assets/open_bash.png' height='280'><br>
-<br><img src='./assets/open_cmd.png' height='260'> <br><br>
+<br><img src='https://github.com/ReiLoko4/to-do-web/assets/103978193/6c4224a5-e7bf-44ba-b17f-5c7417aaa97b' height='260'> <br><br>
 
 3. Se dirija a pasta 'backend' atráves do comando 'cd' [(guia de uso aqui)](https://learn.microsoft.com/pt-br/windows-server/administration/windows-commands/cd)<br>
-<br><img src='./assets/cd_backend.png' height='200'>
+<br><img src='https://github.com/ReiLoko4/to-do-web/assets/103978193/aa1fbb75-2af2-4cba-8e39-eb0b6ec4d9f8' height='200'>
 
 4. Digite o seguinte comando no terminal e pressione enter:
     ```
@@ -46,7 +46,7 @@
 6. Abra outro terminal conforme o passo 2
 
 7. Se dirija a pasta 'frontend' usando o comando 'cd' novamente<br>
-<br><img src='./assets/cd_frontend.png' height='220'><br>
+<br><img src='https://github.com/ReiLoko4/to-do-web/assets/103978193/51e7911a-c4ad-4f0a-b063-50b005bd0544' height='220'><br>
 8. Digite o seguinte comando e pressione enter:
     ```
     npm install
@@ -58,10 +58,10 @@
     ```
 
 10. Copie o link mostrado no terminal
-<br><br><img src='./assets/copying.png' height='310'>
+<br><br><img src='https://github.com/ReiLoko4/to-do-web/assets/103978193/03c0ccc2-367b-48cf-90fd-16566fb9683d' height='310'>
 
 11. Abra um navegador de sua prefêrencia e cole o link
-<br><br><img src='./assets/link_on_browser.png' height='150'>
+<br><br><img src='https://github.com/ReiLoko4/to-do-web/assets/103978193/56c05c7a-b244-4651-81e5-a97e5afcf329' height='150'>
 
 * ⚠️ OBS: os terminais devem estar rodando o comando ao mesmo tempo, do contrário resultará em erro.<br><br>
 
