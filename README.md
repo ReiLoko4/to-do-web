@@ -28,7 +28,7 @@
 1. Certifique se de ter o NodeJS instalado em seu computador antes de continuar
 
 2. Abra o terminal de sua prefêrencia na pasta raiz do projeto, recomendo o [Git Bash](https://git-scm.com/downloads)<br>
-<br><img src='./assets/open_bash.png' height='280'><br>
+<br><img src='https://github.com/ReiLoko4/to-do-web/assets/103978193/622b4827-2102-4185-b586-891b92041bf3' height='280'><br>
 <br><img src='https://github.com/ReiLoko4/to-do-web/assets/103978193/6c4224a5-e7bf-44ba-b17f-5c7417aaa97b' height='260'> <br><br>
 
 3. Se dirija a pasta 'backend' atráves do comando 'cd' [(guia de uso aqui)](https://learn.microsoft.com/pt-br/windows-server/administration/windows-commands/cd)<br>
