@@ -1,7 +1,7 @@
-import express from "express";
+import express from 'express';
 import * as bodyParser from 'body-parser';
-import { connectToDatabase } from "./server";
-import { config } from "./config/config"
+import { connectToDatabase } from './server';
+import { config } from './config/config';
 
 const cors = require('cors')
 const routes = require('./routes/routes')
@@ -12,12 +12,12 @@ connectToDatabase()
     .then(() => {
         app.use(bodyParser.json())
         app.use(routes);
-        app.listen(8080, () => {
+        app.listen(config.server.port, () => {
             console.log(`Server started at http://localhost:${config.server.port}`);
         });
     })
     .catch((error: Error) => {
-        console.error("Database connection failed", error);
+        console.error('Database connection failed', error);
         process.exit();
     });
 

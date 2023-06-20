@@ -17,7 +17,7 @@ export default function AddTodo() {
 
   return (
     <form className='container-addTodo' onSubmit={(e) => addTodo(e)}>
-      <input type='text' placeholder='Adicionar nova tarefa' value={nameTodo} 
+      <input type='text' placeholder='Adicionar uma nova tarefa' value={nameTodo} 
         onChange={(e) => setNameTodo(e.target.value)} 
         onSubmit={(e) => setNameTodo(e.currentTarget.value)
       }/>
