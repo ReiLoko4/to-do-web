@@ -7,7 +7,7 @@
 # Sumário
 * [Resumo](#resumo)
 * [Tecnologias](#tecnologias-utlizadas)
-* [Requisitos](#Requisitos)
+* [Requisitos](#requisitos)
 * [Instruções de uso](#instruções-de-uso)<br><br>
 
 # Tecnologias utlizadas
